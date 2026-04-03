@@ -1,0 +1,12 @@
+{
+    "name": "Send the number of tickets per status in a project on JIRA via Slack",
+    "description": "To jest reprezentacyjny plik z kodem źródłowym Make.com.",
+    "instructions": "Zastąp zawartość tego pliku pełnym eksportem JSON, który posiadasz z panelu Make.com, aby HR mógł uwiarygodnić Twoje scenariusze.",
+    "flow": [
+        {
+            "id": 35,
+            "module": "jira:searchIssues",
+            "version": 2
+        }
+    ]
+}

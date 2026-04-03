@@ -1,0 +1,17 @@
+.projects__header {
+  max-width: 560px;
+  margin-bottom: 4rem;
+}
+
+.projects__lead {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 1rem;
+  line-height: 1.65;
+}
+
+.projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}

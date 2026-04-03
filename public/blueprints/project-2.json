@@ -1,0 +1,12 @@
+{
+    "name": "Integration Facebook Ads Campaign Management, Facebook Insights, Google Sheets",
+    "description": "To jest reprezentacyjny plik z kodem źródłowym Make.com.",
+    "instructions": "Zastąp zawartość tego pliku pełnym eksportem JSON, który posiadasz z panelu Make.com, aby HR mógł uwiarygodnić Twoje scenariusze.",
+    "flow": [
+        {
+            "id": 1,
+            "module": "facebook-ads-cm:listCampaigns",
+            "version": 1
+        }
+    ]
+}
