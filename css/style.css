@@ -318,8 +318,16 @@ h1, h2, h3, .logo {
 }
 
 .expertise-card .icon {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 1.5rem;
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.12), rgba(139, 92, 246, 0.12));
+    border: 1px solid rgba(59, 130, 246, 0.2);
 }
 
 .expertise-card h3 {
@@ -403,6 +411,8 @@ h1, h2, h3, .logo {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+    overflow: hidden;
 }
 
 .project-category {
@@ -435,7 +445,7 @@ h1, h2, h3, .logo {
     flex-direction: column;
     gap: 1.2rem;
     margin-bottom: 2.5rem;
-    border-left: 2px solid var(--glass-border);
+    border-left: 2px solid rgba(59, 130, 246, 0.35);
     padding-left: 1.5rem;
 }
 
@@ -541,7 +551,7 @@ h1, h2, h3, .logo {
 
 /* Modal Schema UI */
 .modal {
-    display: none;
+    display: flex;
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -553,12 +563,15 @@ h1, h2, h3, .logo {
     align-items: center;
     justify-content: center;
     opacity: 0;
-    transition: opacity var(--transition-medium);
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity var(--transition-medium), visibility var(--transition-medium);
 }
 
 .modal.active {
-    display: flex;
     opacity: 1;
+    visibility: visible;
+    pointer-events: all;
 }
 
 .modal-content {
@@ -690,5 +703,180 @@ h1, h2, h3, .logo {
     }
     .schema-node .node-icon {
         margin-bottom: 0;
+    }
+}
+
+/* =====================
+   Custom Scrollbar
+   ===================== */
+::-webkit-scrollbar {
+    width: 6px;
+}
+::-webkit-scrollbar-track {
+    background: var(--bg-color);
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: var(--accent-primary);
+}
+
+/* =====================
+   Hero Stats
+   ===================== */
+.hero-stats {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    margin-top: 3rem;
+    padding-top: 2.5rem;
+    border-top: 1px solid var(--glass-border);
+}
+
+.stat-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.3rem;
+}
+
+.stat-number {
+    font-family: var(--font-heading);
+    font-size: 1.8rem;
+    font-weight: 700;
+    background: linear-gradient(135deg, var(--accent-primary), var(--accent-secondary));
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 0.78rem;
+    color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    white-space: nowrap;
+}
+
+.stat-divider {
+    width: 1px;
+    height: 2.5rem;
+    background: var(--glass-border);
+}
+
+/* =====================
+   Project Number Watermark
+   ===================== */
+.project-number {
+    position: absolute;
+    top: 1.5rem;
+    right: 2rem;
+    font-family: var(--font-heading);
+    font-size: 7rem;
+    font-weight: 700;
+    line-height: 1;
+    letter-spacing: -5px;
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255, 255, 255, 0.05);
+    pointer-events: none;
+    user-select: none;
+}
+
+/* =====================
+   Project Card Spacing
+   ===================== */
+.project-showcase .project-card + .project-card {
+    margin-top: 4rem;
+}
+
+/* =====================
+   Project Actions Row
+   ===================== */
+.project-actions {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+/* =====================
+   Download Button
+   ===================== */
+.btn-download {
+    border-color: var(--text-muted) !important;
+    color: var(--text-muted) !important;
+}
+
+.btn-download:hover {
+    border-color: var(--accent-primary) !important;
+    color: var(--accent-primary) !important;
+    background: rgba(59, 130, 246, 0.05) !important;
+}
+
+/* =====================
+   Tech Tag Upgrade
+   ===================== */
+.tech-tag {
+    background: rgba(11, 15, 25, 0.85);
+    backdrop-filter: blur(8px);
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    padding: 0.35rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: rgba(248, 250, 252, 0.9);
+    letter-spacing: 0.3px;
+}
+
+/* =====================
+   Footer Contact Icon Spacing
+   ===================== */
+.footer-contact .contact-link i {
+    margin-right: 0.5rem;
+}
+
+/* =====================
+   Badge Pulse Animation
+   ===================== */
+.badge {
+    animation: badgePulse 3s ease-in-out infinite;
+}
+
+@keyframes badgePulse {
+    0%, 100% { box-shadow: 0 0 0 0 rgba(139, 92, 246, 0); }
+    50% { box-shadow: 0 0 0 6px rgba(139, 92, 246, 0.08); }
+}
+
+/* =====================
+   Expertise Card Hover Upgrade
+   ===================== */
+.expertise-card:hover .icon {
+    background: linear-gradient(135deg, rgba(59, 130, 246, 0.2), rgba(139, 92, 246, 0.2));
+    border-color: rgba(59, 130, 246, 0.4);
+}
+
+/* =====================
+   Project Card Hover Glow
+   ===================== */
+.project-card.large:hover {
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.4), 0 0 0 1px rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.15);
+}
+
+/* =====================
+   Responsive Additions
+   ===================== */
+@media (max-width: 768px) {
+    .hero-stats {
+        gap: 1.5rem;
+    }
+    .stat-number {
+        font-size: 1.4rem;
+    }
+    .project-number {
+        font-size: 5rem;
     }
 }

@@ -26,13 +26,21 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    // Apply animation to elements
-    const elementsToAnimate = document.querySelectorAll('.expertise-card, .project-card');
-    
-    elementsToAnimate.forEach(el => {
+    // Apply animation to elements with stagger for expertise cards
+    const expertiseCards = document.querySelectorAll('.expertise-card');
+    const projectCards = document.querySelectorAll('.project-card');
+
+    expertiseCards.forEach((el, index) => {
         el.style.opacity = "0";
         el.style.transform = "translateY(30px)";
-        el.style.transition = "opacity 0.8s ease, transform 0.8s ease";
+        el.style.transition = `opacity 0.8s ease ${index * 0.15}s, transform 0.8s ease ${index * 0.15}s`;
+        observer.observe(el);
+    });
+
+    projectCards.forEach(el => {
+        el.style.opacity = "0";
+        el.style.transform = "translateY(40px)";
+        el.style.transition = "opacity 0.9s ease, transform 0.9s cubic-bezier(0.16, 1, 0.3, 1)";
         observer.observe(el);
     });
 
