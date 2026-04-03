@@ -101,6 +101,14 @@ document.addEventListener('DOMContentLoaded', () => {
             { name: 'Data Aggregator', type: 'process', icon: '📦', desc: 'Group by Status' },
             { name: 'Text Parser', type: 'process', icon: '📝', desc: 'Format Report' },
             { name: 'Slack', type: 'notify', icon: '💬', desc: 'Send Message' }
+        ],
+        '4': [
+            { name: 'ID POS API', type: 'trigger', icon: '🏪', desc: 'Auth & Fetch Transactions' },
+            { name: 'Basic Feeder', type: 'process', icon: '🔁', desc: 'Iterate Records' },
+            { name: 'ID POS API', type: 'process', icon: '🧾', desc: 'Get Transaction Detail' },
+            { name: 'OpenRouter AI', type: 'process', icon: '🧠', desc: 'Classify Kitchen / Bar' },
+            { name: 'JSON Parser', type: 'process', icon: '⚙️', desc: 'Parse AI Response' },
+            { name: 'Google Sheets', type: 'action', icon: '📊', desc: 'Append Report Row' }
         ]
     };
 

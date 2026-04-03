@@ -202,6 +202,44 @@
                     </div>
                 </div>
             </div>
+
+            <div class="project-card large glass">
+                <div class="project-image">
+                    <img src="images/analytics_thumbnail_2.png" alt="ID POS Legia Sports Bar sales automation">
+                    <div class="tech-stack-overlay">
+                        <span class="tech-tag">Make.com</span>
+                        <span class="tech-tag">ID POS API</span>
+                        <span class="tech-tag">OpenRouter AI</span>
+                        <span class="tech-tag">Google Sheets</span>
+                    </div>
+                </div>
+                <div class="project-info">
+                    <span class="project-number">04</span>
+                    <span class="project-category">POS Integration & AI Categorization</span>
+                    <h3 class="project-title">ID POS → Google Sheets Sales Reporter</h3>
+                    <p class="project-description">
+                        Automated daily sales pipeline for <strong>Legia Sports Bar</strong> in Warsaw. Fetches transaction data from the <strong>ID POS</strong> system, then uses an <strong>AI model (NVIDIA Nemotron via OpenRouter)</strong> to intelligently categorize each transaction into Kitchen or Bar revenue, and logs every record into <strong>Google Sheets</strong>.
+                    </p>
+                    <div class="project-details">
+                        <div class="detail-item">
+                            <span class="label">Challenge</span>
+                            <span class="value">Manual separation of food and beverage revenue from raw POS transaction data for weekly financial reporting.</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Solution</span>
+                            <span class="value">A Make.com pipeline authenticates with the ID POS API, iterates over 1000+ transactions, sends each product list to an <strong>AI classifier</strong>, parses the JSON response, and appends structured rows to Google Sheets — with a 3s sleep to respect API rate limits.</span>
+                        </div>
+                        <div class="detail-item">
+                            <span class="label">Result</span>
+                            <span class="value highlight">Zero-touch daily financial reports with automatic Kitchen / Bar revenue split — ready for management review every morning.</span>
+                        </div>
+                    </div>
+                    <div class="project-actions">
+                        <a href="#" class="btn btn-outline btn-schema" data-project="4">View Logic Schema</a>
+                        <a href="blueprints/project-4.json" download="Make_Blueprint_IDPOS_Legia.json" class="btn btn-outline btn-download">📦 Download Blueprint (JSON)</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
