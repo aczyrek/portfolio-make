@@ -32,13 +32,13 @@ export const certifications = [
   {
     id: 1,
     title: 'Make Academy Basics',
-    image: '/images/make-basics.png',
+    image: '/images/make_basic.png',
     link: 'https://academy.make.com/',
   },
   {
     id: 2,
     title: 'Make Academy Intermediate',
-    image: '/images/make-intermediate.png',
+    image: '/images/make_intermediate.png',
     link: 'https://academy.make.com/',
   },
 ]
