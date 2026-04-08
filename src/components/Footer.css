@@ -86,3 +86,56 @@
   font-size: 0.72rem;
   color: var(--faint);
 }
+
+.footer__certifications {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.footer__certifications-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.footer__cert-card {
+  display: block;
+  width: 120px;
+  height: 120px;
+  opacity: 0;
+  transform: translateY(20px);
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  filter: grayscale(100%) opacity(0.8);
+}
+
+.footer__cert-card.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.footer__cert-card:hover {
+  filter: grayscale(0%) opacity(1);
+  transform: translateY(-5px);
+}
+
+.footer__cert-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+@media (max-width: 600px) {
+  .footer__certifications-grid {
+    gap: 1.5rem;
+  }
+  .footer__cert-card {
+    width: 90px;
+    height: 90px;
+  }
+}

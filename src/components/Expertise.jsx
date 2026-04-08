@@ -1,4 +1,4 @@
-import { expertise, certifications } from '../data/content'
+import { expertise } from '../data/content'
 import { useInView } from '../hooks/useInView'
 import './Expertise.css'
 
@@ -40,25 +40,6 @@ export default function Expertise() {
               <div className="expertise-card__glow" />
             </div>
           ))}
-        </div>
-
-        <div className="certifications">
-          <h3 className="certifications__title fade-up">Certified Architect</h3>
-          <div className="certifications__grid">
-            {certifications.map((cert, i) => (
-              <a
-                key={cert.id}
-                href={cert.link}
-                target="_blank"
-                rel="noreferrer"
-                className={`certification-card fade-up${inView ? ' visible' : ''}`}
-                style={{ transitionDelay: `${0.3 + i * 0.15}s` }}
-                title={cert.title}
-              >
-                <img src={cert.image} alt={cert.title} className="certification-card__img" />
-              </a>
-            ))}
-          </div>
         </div>
       </div>
     </section>

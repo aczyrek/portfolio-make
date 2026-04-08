@@ -1,8 +1,12 @@
+import { certifications } from '../data/content'
+import { useInView } from '../hooks/useInView'
 import './Footer.css'
 
 export default function Footer() {
+  const [ref, inView] = useInView()
+
   return (
-    <footer className="footer" id="contact">
+    <footer className="footer" id="contact" ref={ref}>
       <div className="footer__inner container">
         <div className="footer__top">
           <div className="footer__brand">
@@ -33,6 +37,25 @@ export default function Footer() {
               </svg>
               linkedin.com/in/adrian-czyrek
             </a>
+          </div>
+        </div>
+
+
+        <div className="footer__certifications">
+          <div className="footer__certifications-grid">
+            {certifications.map((cert, i) => (
+              <a
+                key={cert.id}
+                href={cert.link}
+                target="_blank"
+                rel="noreferrer"
+                className={`footer__cert-card fade-up${inView ? ' visible' : ''}`}
+                style={{ transitionDelay: `${0.1 + i * 0.15}s` }}
+                title={cert.title}
+              >
+                <img src={cert.image} alt={cert.title} />
+              </a>
+            ))}
           </div>
         </div>
 
