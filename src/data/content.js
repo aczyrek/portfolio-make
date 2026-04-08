@@ -33,13 +33,13 @@ export const certifications = [
     id: 1,
     title: 'Make Academy Basics',
     image: '/images/make_basic.png',
-    link: 'https://academy.make.com/',
+    link: 'https://www.credly.com/badges/25234564-5824-42de-a005-f44ebb2bdacb/linked_in?t=tcetig',
   },
   {
     id: 2,
     title: 'Make Academy Intermediate',
     image: '/images/make_intermediate.png',
-    link: 'https://academy.make.com/',
+    link: 'https://www.credly.com/badges/b4314ac7-5bc1-4a34-bc2c-c6231a075244/linked_in?t=tcrj42',
   },
 ]
 
