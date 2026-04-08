@@ -28,6 +28,21 @@ export const expertise = [
   },
 ]
 
+export const certifications = [
+  {
+    id: 1,
+    title: 'Make Academy Basics',
+    image: '/images/make-basics.png',
+    link: 'https://academy.make.com/',
+  },
+  {
+    id: 2,
+    title: 'Make Academy Intermediate',
+    image: '/images/make-intermediate.png',
+    link: 'https://academy.make.com/',
+  },
+]
+
 export const projects = [
   {
     id: 1,
