@@ -1,0 +1,1229 @@
+{
+    "name": "Legia AmpleMarket -> Attio Deal",
+    "flow": [
+        {
+            "id": 1,
+            "module": "gateway:CustomWebHook",
+            "version": 1,
+            "parameters": {
+                "hook": 4031289,
+                "maxResults": 1
+            },
+            "mapper": {},
+            "metadata": {
+                "designer": {
+                    "x": 0,
+                    "y": 0
+                },
+                "restore": {
+                    "parameters": {
+                        "hook": {
+                            "data": {
+                                "editable": "true"
+                            },
+                            "label": "legia-ample-attio-hook"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "hook",
+                        "type": "hook:gateway-webhook",
+                        "label": "Webhook",
+                        "required": true
+                    },
+                    {
+                        "name": "maxResults",
+                        "type": "number",
+                        "label": "Maximum number of results"
+                    }
+                ],
+                "interface": [
+                    {
+                        "name": "linkedin_url",
+                        "type": "text"
+                    },
+                    {
+                        "name": "is_reply",
+                        "type": "boolean"
+                    },
+                    {
+                        "name": "labels",
+                        "spec": {
+                            "type": "text"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "name": "user",
+                        "spec": [
+                            {
+                                "name": "first_name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "last_name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "email",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "dynamic_fields",
+                        "spec": [
+                            {
+                                "name": "first_name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "last_name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "company_name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "company_domain",
+                                "type": "text"
+                            },
+                            {
+                                "name": "company_email_domain",
+                                "type": "text"
+                            },
+                            {
+                                "name": "title",
+                                "type": "text"
+                            },
+                            {
+                                "name": "simplified_title",
+                                "type": "text"
+                            },
+                            {
+                                "name": "email",
+                                "type": "text"
+                            },
+                            {
+                                "name": "city",
+                                "type": "text"
+                            },
+                            {
+                                "name": "state",
+                                "type": "text"
+                            },
+                            {
+                                "name": "country",
+                                "type": "text"
+                            },
+                            {
+                                "name": "industry",
+                                "type": "text"
+                            },
+                            {
+                                "name": "linkedin_url",
+                                "type": "text"
+                            },
+                            {
+                                "name": "sender",
+                                "spec": [
+                                    {
+                                        "name": "first_name",
+                                        "type": "text"
+                                    },
+                                    {
+                                        "name": "last_name",
+                                        "type": "text"
+                                    }
+                                ],
+                                "type": "collection"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "sequence",
+                        "spec": [
+                            {
+                                "name": "id",
+                                "type": "text"
+                            },
+                            {
+                                "name": "name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "start_date",
+                                "type": "text"
+                            },
+                            {
+                                "name": "end_date",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "sequence_stage",
+                        "spec": [
+                            {
+                                "name": "index",
+                                "type": "number"
+                            },
+                            {
+                                "name": "type",
+                                "type": "text"
+                            },
+                            {
+                                "name": "automatic",
+                                "type": "boolean"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "contact",
+                        "spec": [
+                            {
+                                "name": "id",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "reply_sequence",
+                        "spec": [
+                            {
+                                "name": "name",
+                                "type": "text"
+                            },
+                            {
+                                "name": "start_date",
+                                "type": "text"
+                            },
+                            {
+                                "name": "end_date",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "reply_sequence_stage",
+                        "spec": [
+                            {
+                                "name": "index",
+                                "type": "number"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "from",
+                        "type": "text"
+                    },
+                    {
+                        "name": "to",
+                        "spec": {
+                            "type": "text"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "name": "cc",
+                        "spec": {
+                            "type": "text"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "name": "bcc",
+                        "spec": {
+                            "type": "text"
+                        },
+                        "type": "array"
+                    },
+                    {
+                        "name": "date",
+                        "type": "text"
+                    },
+                    {
+                        "name": "subject",
+                        "type": "text"
+                    },
+                    {
+                        "name": "body",
+                        "type": "text"
+                    },
+                    {
+                        "name": "id",
+                        "type": "text"
+                    },
+                    {
+                        "name": "linkedin",
+                        "spec": [
+                            {
+                                "name": "subject",
+                                "type": "text"
+                            },
+                            {
+                                "name": "description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "date",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "call",
+                        "spec": [
+                            {
+                                "name": "date",
+                                "type": "text"
+                            },
+                            {
+                                "name": "title",
+                                "type": "text"
+                            },
+                            {
+                                "name": "description",
+                                "type": "text"
+                            },
+                            {
+                                "name": "direction",
+                                "type": "text"
+                            },
+                            {
+                                "name": "disposition",
+                                "type": "text"
+                            },
+                            {
+                                "name": "duration",
+                                "type": "text"
+                            },
+                            {
+                                "name": "from",
+                                "type": "text"
+                            },
+                            {
+                                "name": "to",
+                                "type": "text"
+                            },
+                            {
+                                "name": "recording_url",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    },
+                    {
+                        "name": "task",
+                        "spec": [
+                            {
+                                "name": "subject",
+                                "type": "text"
+                            },
+                            {
+                                "name": "user_notes",
+                                "type": "text"
+                            },
+                            {
+                                "name": "date",
+                                "type": "text"
+                            }
+                        ],
+                        "type": "collection"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 15,
+            "module": "attio:makeAnApiCall",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 14029217
+            },
+            "filter": {
+                "name": "Filter for interested responses",
+                "conditions": [
+                    [
+                        {
+                            "a": "{{1.labels[]}}",
+                            "b": "Interested",
+                            "o": "text:equal"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{1.labels[]}}",
+                            "b": "Forwarded to the right person",
+                            "o": "text:equal"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{1.labels[]}}",
+                            "b": "Asked to circle back later",
+                            "o": "text:equal"
+                        }
+                    ],
+                    [
+                        {
+                            "a": "{{1.labels[]}}",
+                            "b": "Introduction",
+                            "o": "text:equal"
+                        }
+                    ]
+                ]
+            },
+            "mapper": {
+                "url": "/v2/workspace_members",
+                "method": "GET",
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    },
+                    {
+                        "key": "Authorization",
+                        "value": "Bearer 109c4a09aa79734c63b7aed51cdb7c88514443bdeec52107be762fb832d2f00a"
+                    }
+                ]
+            },
+            "metadata": {
+                "designer": {
+                    "x": 300,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "qs": {
+                            "mode": "chose"
+                        },
+                        "method": {
+                            "mode": "chose",
+                            "label": "GET"
+                        },
+                        "headers": {
+                            "mode": "chose",
+                            "items": [
+                                null,
+                                null
+                            ]
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "attio"
+                            },
+                            "label": "My Attio Access Token connection (b.pawlowicz@tisagroup.ch (Legia Warszawa))"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:attio2,attio",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "url",
+                        "type": "text",
+                        "label": "URL",
+                        "required": true
+                    },
+                    {
+                        "name": "method",
+                        "type": "select",
+                        "label": "Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "PATCH",
+                                "DELETE"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key"
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Headers"
+                    },
+                    {
+                        "name": "qs",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key"
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Query String"
+                    },
+                    {
+                        "name": "body",
+                        "type": "any",
+                        "label": "Body"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 21,
+            "module": "code:ExecuteCode",
+            "version": 1,
+            "parameters": {},
+            "mapper": {
+                "input": [
+                    {
+                        "name": "salesTeam",
+                        "value": "{{15.body.data}}"
+                    },
+                    {
+                        "name": "targetEmail",
+                        "value": "{{1.user.email}}"
+                    }
+                ],
+                "language": "javascript",
+                "inputFormat": "editor",
+                "dependencies": [],
+                "codeEditorJavascript": "const { salesTeam, targetEmail } = input;\n\nlet matchedSalesman = salesTeam.find(person => person.email_address === targetEmail);\n\nlet salesmanId = null;\n\nif (!matchedSalesman) {\n    matchedSalesman = salesTeam.find(person => person.email_address === \"b.pawlowicz@tisagroup.ch\");\n}\n\nif (matchedSalesman) {\n    salesmanId = matchedSalesman.id.workspace_member_id;\n} else {\n    throw new Error(`Salesman with email ${targetEmail} was not found in Attio.`);\n}\n\nreturn {\n    salesman_id: salesmanId\n};"
+            },
+            "metadata": {
+                "designer": {
+                    "x": 600,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "input": {
+                            "items": [
+                                null,
+                                null
+                            ]
+                        },
+                        "language": {
+                            "mode": "chose",
+                            "label": "JavaScript"
+                        },
+                        "inputFormat": {
+                            "label": "Code editor"
+                        }
+                    }
+                },
+                "expect": [
+                    {
+                        "name": "language",
+                        "type": "select",
+                        "label": "Language",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "javascript",
+                                "python"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "input",
+                        "spec": {
+                            "name": "value",
+                            "spec": [
+                                {
+                                    "name": "name",
+                                    "type": "text",
+                                    "label": "Name",
+                                    "required": true,
+                                    "validate": {
+                                        "max": 32,
+                                        "min": 1,
+                                        "pattern": "^[a-zA-Z0-9_]{1,32}$"
+                                    }
+                                },
+                                {
+                                    "name": "value",
+                                    "type": "any",
+                                    "label": "Value"
+                                }
+                            ],
+                            "type": "collection",
+                            "label": "Variable"
+                        },
+                        "type": "array",
+                        "label": "Input"
+                    },
+                    {
+                        "name": "dependencies",
+                        "spec": {
+                            "name": "value",
+                            "type": "text",
+                            "label": "Dependency",
+                            "required": true,
+                            "validate": {
+                                "max": 214,
+                                "min": 1,
+                                "pattern": "^[A-Za-z0-9_@\\./<>=!~\\^+-]{1,214}$"
+                            }
+                        },
+                        "type": "array",
+                        "label": "Additional dependencies (Enterprise plans only)"
+                    },
+                    {
+                        "name": "inputFormat",
+                        "type": "select",
+                        "label": "Input format",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "editor",
+                                "string"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "codeEditorJavascript",
+                        "type": "editor",
+                        "label": "Code",
+                        "required": true
+                    }
+                ]
+            }
+        },
+        {
+            "id": 16,
+            "module": "attio:assertACompany",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 14029217
+            },
+            "mapper": {
+                "[text]name": "{{1.dynamic_fields.company_name}}",
+                "[domain]domains": [
+                    "{{1.dynamic_fields.company_domain}}"
+                ],
+                "matching_attribute": "7f140092-22a5-4b51-86a1-5febd7fe0fd7",
+                "[location]primary_location": {}
+            },
+            "metadata": {
+                "designer": {
+                    "x": 900,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "[domain]domains": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        },
+                        "[select]categories": {
+                            "mode": "chose"
+                        },
+                        "matching_attribute": {
+                            "mode": "chose",
+                            "label": "Domains"
+                        },
+                        "[select]client_type": {
+                            "mode": "chose"
+                        },
+                        "[select]employee_range": {
+                            "mode": "chose"
+                        },
+                        "[select]estimated_arr_usd": {
+                            "mode": "chose"
+                        },
+                        "[phone-number]company_phone_number": {
+                            "mode": "chose"
+                        },
+                        "[record-reference|3678dd85-e17c-43a1-a513-7a675d92d4e6]team": {
+                            "mode": "chose"
+                        },
+                        "[record-reference|7497afe5-ad73-4fb6-8f6c-747896c05e05]associated_deals": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "attio"
+                            },
+                            "label": "My Attio Access Token connection (b.pawlowicz@tisagroup.ch (Legia Warszawa))"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:attio2,attio",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "matching_attribute",
+                        "type": "select",
+                        "label": "Matching Attribute",
+                        "required": true
+                    },
+                    {
+                        "name": "[text]name",
+                        "type": "text",
+                        "label": "Name"
+                    },
+                    {
+                        "name": "[domain]domains",
+                        "spec": {
+                            "name": "value",
+                            "type": "text"
+                        },
+                        "type": "array",
+                        "label": "Domains"
+                    },
+                    {
+                        "name": "[text]description",
+                        "type": "text",
+                        "label": "Description"
+                    },
+                    {
+                        "name": "[select]categories",
+                        "type": "select",
+                        "label": "Categories",
+                        "multiple": true
+                    },
+                    {
+                        "name": "[text]linkedin",
+                        "type": "text",
+                        "label": "LinkedIn"
+                    },
+                    {
+                        "name": "[record-reference|3678dd85-e17c-43a1-a513-7a675d92d4e6]team",
+                        "type": "select",
+                        "label": "Team",
+                        "multiple": true
+                    },
+                    {
+                        "name": "[location]primary_location",
+                        "spec": [
+                            {
+                                "name": "line_1",
+                                "type": "text",
+                                "label": "Line 1"
+                            },
+                            {
+                                "name": "line_2",
+                                "type": "text",
+                                "label": "Line 2"
+                            },
+                            {
+                                "name": "line_3",
+                                "type": "text",
+                                "label": "Line 3"
+                            },
+                            {
+                                "name": "line_4",
+                                "type": "text",
+                                "label": "Line 4"
+                            },
+                            {
+                                "name": "locality",
+                                "type": "text",
+                                "label": "Locality"
+                            },
+                            {
+                                "name": "region",
+                                "type": "text",
+                                "label": "Region"
+                            },
+                            {
+                                "name": "postcode",
+                                "type": "text",
+                                "label": "Postcode"
+                            },
+                            {
+                                "name": "country_code",
+                                "type": "text",
+                                "label": "Country Code"
+                            },
+                            {
+                                "name": "latitude",
+                                "type": "text",
+                                "label": "Latitude"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "text",
+                                "label": "Longitude"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Primary location"
+                    },
+                    {
+                        "name": "[text]facebook",
+                        "type": "text",
+                        "label": "Facebook"
+                    },
+                    {
+                        "name": "[text]instagram",
+                        "type": "text",
+                        "label": "Instagram"
+                    },
+                    {
+                        "name": "[text]twitter",
+                        "type": "text",
+                        "label": "Twitter"
+                    },
+                    {
+                        "name": "[select]estimated_arr_usd",
+                        "type": "select",
+                        "label": "Estimated ARR"
+                    },
+                    {
+                        "name": "[currency]funding_raised_usd",
+                        "type": "text",
+                        "label": "Funding raised"
+                    },
+                    {
+                        "name": "[date]foundation_date",
+                        "type": "date",
+                        "label": "Foundation date"
+                    },
+                    {
+                        "name": "[select]employee_range",
+                        "type": "select",
+                        "label": "Employee range"
+                    },
+                    {
+                        "name": "[record-reference|7497afe5-ad73-4fb6-8f6c-747896c05e05]associated_deals",
+                        "type": "select",
+                        "label": "Associated deals",
+                        "multiple": true
+                    },
+                    {
+                        "name": "[text]angellist",
+                        "type": "text",
+                        "label": "AngelList"
+                    },
+                    {
+                        "name": "[select]client_type",
+                        "type": "select",
+                        "label": "Client Type"
+                    },
+                    {
+                        "name": "[text]company_email_address",
+                        "type": "text",
+                        "label": "Company Email Address"
+                    },
+                    {
+                        "name": "[phone-number]company_phone_number",
+                        "spec": {
+                            "name": "value",
+                            "type": "text"
+                        },
+                        "type": "array",
+                        "label": "Company Phone Number"
+                    },
+                    {
+                        "name": "[number]numer_nip",
+                        "type": "number",
+                        "label": "Numer NIP"
+                    },
+                    {
+                        "name": "[timestamp]nddl_last_duplicate_check",
+                        "type": "date",
+                        "label": "Last Duplicate Check"
+                    },
+                    {
+                        "name": "[text]nddl_duplicate_check_status",
+                        "type": "text",
+                        "label": "Duplicate Check Status"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 17,
+            "module": "attio:assertAPerson",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 14029217
+            },
+            "mapper": {
+                "matching_attribute": "7dd6f7fc-34d5-4f4d-b516-4c89e80aeefd",
+                "[location]primary_location": {},
+                "[email-address]email_addresses": [
+                    "{{1.dynamic_fields.email}}"
+                ]
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1200,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "matching_attribute": {
+                            "mode": "chose",
+                            "label": "Email addresses"
+                        },
+                        "[phone-number]phone_numbers": {
+                            "mode": "chose"
+                        },
+                        "[email-address]email_addresses": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        },
+                        "[record-reference|8064393e-9f6e-4660-8cf3-fd03a700d7e1]company": {
+                            "mode": "chose"
+                        },
+                        "[record-reference|7497afe5-ad73-4fb6-8f6c-747896c05e05]associated_deals": {
+                            "mode": "chose"
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "attio"
+                            },
+                            "label": "My Attio Access Token connection (b.pawlowicz@tisagroup.ch (Legia Warszawa))"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:attio2,attio",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "matching_attribute",
+                        "type": "select",
+                        "label": "Matching Attribute",
+                        "required": true
+                    },
+                    {
+                        "name": "[personal-name]name",
+                        "type": "text",
+                        "label": "Name"
+                    },
+                    {
+                        "name": "[email-address]email_addresses",
+                        "spec": {
+                            "name": "value",
+                            "type": "email"
+                        },
+                        "type": "array",
+                        "label": "Email addresses"
+                    },
+                    {
+                        "name": "[text]description",
+                        "type": "text",
+                        "label": "Description"
+                    },
+                    {
+                        "name": "[record-reference|8064393e-9f6e-4660-8cf3-fd03a700d7e1]company",
+                        "type": "select",
+                        "label": "Company"
+                    },
+                    {
+                        "name": "[text]job_title",
+                        "type": "text",
+                        "label": "Job title"
+                    },
+                    {
+                        "name": "[phone-number]phone_numbers",
+                        "spec": {
+                            "name": "value",
+                            "type": "text"
+                        },
+                        "type": "array",
+                        "label": "Phone numbers"
+                    },
+                    {
+                        "name": "[location]primary_location",
+                        "spec": [
+                            {
+                                "name": "line_1",
+                                "type": "text",
+                                "label": "Line 1"
+                            },
+                            {
+                                "name": "line_2",
+                                "type": "text",
+                                "label": "Line 2"
+                            },
+                            {
+                                "name": "line_3",
+                                "type": "text",
+                                "label": "Line 3"
+                            },
+                            {
+                                "name": "line_4",
+                                "type": "text",
+                                "label": "Line 4"
+                            },
+                            {
+                                "name": "locality",
+                                "type": "text",
+                                "label": "Locality"
+                            },
+                            {
+                                "name": "region",
+                                "type": "text",
+                                "label": "Region"
+                            },
+                            {
+                                "name": "postcode",
+                                "type": "text",
+                                "label": "Postcode"
+                            },
+                            {
+                                "name": "country_code",
+                                "type": "text",
+                                "label": "Country Code"
+                            },
+                            {
+                                "name": "latitude",
+                                "type": "text",
+                                "label": "Latitude"
+                            },
+                            {
+                                "name": "longitude",
+                                "type": "text",
+                                "label": "Longitude"
+                            }
+                        ],
+                        "type": "collection",
+                        "label": "Primary location"
+                    },
+                    {
+                        "name": "[text]angellist",
+                        "type": "text",
+                        "label": "AngelList"
+                    },
+                    {
+                        "name": "[text]facebook",
+                        "type": "text",
+                        "label": "Facebook"
+                    },
+                    {
+                        "name": "[text]instagram",
+                        "type": "text",
+                        "label": "Instagram"
+                    },
+                    {
+                        "name": "[text]linkedin",
+                        "type": "text",
+                        "label": "LinkedIn"
+                    },
+                    {
+                        "name": "[text]twitter",
+                        "type": "text",
+                        "label": "Twitter"
+                    },
+                    {
+                        "name": "[record-reference|7497afe5-ad73-4fb6-8f6c-747896c05e05]associated_deals",
+                        "type": "select",
+                        "label": "Associated deals",
+                        "multiple": true
+                    },
+                    {
+                        "name": "[timestamp]nddl_last_duplicate_check",
+                        "type": "date",
+                        "label": "Last Duplicate Check"
+                    },
+                    {
+                        "name": "[text]nddl_duplicate_check_status",
+                        "type": "text",
+                        "label": "Duplicate Check Status"
+                    }
+                ]
+            }
+        },
+        {
+            "id": 19,
+            "module": "attio:makeAnApiCall",
+            "version": 2,
+            "parameters": {
+                "__IMTCONN__": 14029217
+            },
+            "mapper": {
+                "url": "/v2/objects/deals/records",
+                "body": "{\n  \"data\": {\n    \"values\": {\n      \"name\": {{1.dynamic_fields.company_name}},\n      \"stage\": \"7df54250-d657-4b46-acbf-b9d7467d3da0\",\n      \"owner\": {{21.result.salesman_id}},\n      \"associated_people\": [\n        {\n          \"target_object\": \"people\",\n          \"email_addresses\": [\n            {\n              \"email_address\"{{1.dynamic_fields.email}}\n            }\n          ]\n        }\n      ],\n      \"associated_company\": {\n        \"target_object\": \"companies\",\n        \"domains\": [\n          {\n            \"domain\": {{1.dynamic_fields.company_domain}}\n          }\n        ]\n      }\n    }\n  }\n}",
+                "method": "POST",
+                "headers": [
+                    {
+                        "key": "Content-Type",
+                        "value": "application/json"
+                    }
+                ]
+            },
+            "metadata": {
+                "designer": {
+                    "x": 1500,
+                    "y": 0
+                },
+                "restore": {
+                    "expect": {
+                        "qs": {
+                            "mode": "chose"
+                        },
+                        "method": {
+                            "mode": "chose",
+                            "label": "POST"
+                        },
+                        "headers": {
+                            "mode": "chose",
+                            "items": [
+                                null
+                            ]
+                        }
+                    },
+                    "parameters": {
+                        "__IMTCONN__": {
+                            "data": {
+                                "scoped": "true",
+                                "connection": "attio"
+                            },
+                            "label": "My Attio Access Token connection (b.pawlowicz@tisagroup.ch (Legia Warszawa))"
+                        }
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "__IMTCONN__",
+                        "type": "account:attio2,attio",
+                        "label": "Connection",
+                        "required": true
+                    }
+                ],
+                "expect": [
+                    {
+                        "name": "url",
+                        "type": "text",
+                        "label": "URL",
+                        "required": true
+                    },
+                    {
+                        "name": "method",
+                        "type": "select",
+                        "label": "Method",
+                        "required": true,
+                        "validate": {
+                            "enum": [
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "PATCH",
+                                "DELETE"
+                            ]
+                        }
+                    },
+                    {
+                        "name": "headers",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key"
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Headers"
+                    },
+                    {
+                        "name": "qs",
+                        "spec": [
+                            {
+                                "name": "key",
+                                "type": "text",
+                                "label": "Key"
+                            },
+                            {
+                                "name": "value",
+                                "type": "text",
+                                "label": "Value"
+                            }
+                        ],
+                        "type": "array",
+                        "label": "Query String"
+                    },
+                    {
+                        "name": "body",
+                        "type": "any",
+                        "label": "Body"
+                    }
+                ]
+            }
+        }
+    ],
+    "metadata": {
+        "instant": true,
+        "version": 1,
+        "scenario": {
+            "roundtrips": 1,
+            "maxErrors": 3,
+            "autoCommit": true,
+            "autoCommitTriggerLast": true,
+            "sequential": false,
+            "slots": null,
+            "confidential": false,
+            "dataloss": false,
+            "dlq": false,
+            "freshVariables": false
+        },
+        "designer": {
+            "orphans": []
+        },
+        "zone": "eu2.make.com",
+        "notes": []
+    }
+}
