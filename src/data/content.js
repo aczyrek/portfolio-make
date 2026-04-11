@@ -191,4 +191,28 @@ export const projects = [
       { icon: "🤝", name: "Attio API", desc: "Create Deal" },
     ],
   },
+  {
+    id: 7,
+    number: "07",
+    category: "Site Monitoring & Alerts",
+    title: "Advanced Website Health Monitor",
+    description:
+      "Custom monitoring pipeline on Latenode that routinely checks a website's HTTP status, performance (response time), verifies specific content keywords, detects database error strings in HTML, and sends detailed email reports.",
+    tags: ["Latenode", "JavaScript", "Uptime Monitoring", "Webhooks"],
+    image: "/images/automation_thumbnail.png",
+    challenge:
+      "Basic uptime monitors often miss \"silent\" errors where the server returns 200 OK but the page is blank, missing key elements, or displaying database errors.",
+    solution:
+      "Scheduled Latenode workflow downloads the page HTML, executes custom JavaScript to validate the presence of critical keywords, checks for common error phrases, and sends an automated email alert with a full diagnostic report.",
+    result:
+      "Proactive, automated incident detection that immediately flags content or performance issues before users notice.",
+    blueprint: "/blueprints/project-7.json",
+    filename: "Latenode_Website_Monitoring.json",
+    schema: [
+      { icon: "⏱️", name: "Schedule", desc: "Cron Trigger" },
+      { icon: "🌐", name: "HTTP Request", desc: "Fetch HTML & Status" },
+      { icon: "🧑‍💻", name: "JS Code", desc: "Analyze Content & Stats" },
+      { icon: "📧", name: "Email", desc: "Send Status Alert" },
+    ],
+  },
 ];

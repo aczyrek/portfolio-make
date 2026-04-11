@@ -1,0 +1,3284 @@
+{
+  "id": "69d9edde9b03c8500fbd5fcd",
+  "folderId": "",
+  "title": "Legia Test",
+  "description": "",
+  "nodes": [
+    {
+      "id": "69d9ee8f9b03c8500fbd5fd3",
+      "title": "",
+      "description": "",
+      "localId": "1",
+      "typeId": "6481fedb452eadd1825433e0",
+      "params": [
+        {
+          "key": "schedule_cron",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "0 0 7 * * *",
+            "text": "0 0 7 * * *",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "schedule_timezone",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "Europe/Warsaw",
+            "text": "Europe/Warsaw",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 0,
+        "y": 0
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "schedule_cron",
+            "title": "Schedule cron",
+            "type": "string",
+            "required": true,
+            "description": "Cron expression consists of five subexpressions separated by a blank: minute, \nhour, day of month, month, day of week. Node allows you to run the scenario by cron expression in the selected time zone. \nNote: the \"Run once\" command will not run a scenario by schedule! To start the node, it must be deployed on prod \nenvironment and be \\\"Active\\\". To disable the node, deactivate the script or remove the node from the script and deploy \nthe updated script to prod environment.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "0 */5 * * * *",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "schedule_timezone",
+            "title": "Schedule timezone",
+            "type": "string",
+            "required": true,
+            "description": "Timezone for the cron expression",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "quick_preview_schema",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": null,
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null,
+        "tags": []
+      }
+    },
+    {
+      "id": "69d9eec60a095fc3b3d72bc7",
+      "title": "HTTP_Legia",
+      "description": "",
+      "localId": "2",
+      "typeId": "62cc22317ae28c026d25692f",
+      "params": [
+        {
+          "key": "body",
+          "type": "text",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "url",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "https://legia.com/pilka-nozna",
+            "text": "https://legia.com/pilka-nozna",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "method",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "GET"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "post_params",
+          "type": "string_to_string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "headers",
+          "type": "string_to_string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "post_params_urlencoded",
+          "type": "string_to_string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "basic_auth_username",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "basic_auth_password",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "digest_auth_username",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "digest_auth_password",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "ntlm_auth_username",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "ntlm_auth_password",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "ntlm_auth_domain",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "hide_all",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "http_proxy_address",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "http_proxy_login",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "http_proxy_password",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_numbers",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "2",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_delay",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "3",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_regexp",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_regexp",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_numbers",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "2",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_delay",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "3",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 222,
+        "y": 0
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "body",
+            "title": "Body",
+            "type": "text",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "url",
+            "title": "Url",
+            "type": "string",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "method",
+            "title": "Http method",
+            "type": "select",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "GET",
+                    "value": "GET"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": false
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [
+                "GET"
+              ],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "post_params",
+            "title": "POST params",
+            "type": "string_to_string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "headers",
+            "title": "Http headers",
+            "type": "string_to_string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "post_params_urlencoded",
+            "title": "x-www-form-urlencoded",
+            "type": "string_to_string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "basic_auth_username",
+            "title": "Basic Auth Username",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "basic_auth_password",
+            "title": "Basic Auth Password",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "digest_auth_username",
+            "title": "Digest Auth Username",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "digest_auth_password",
+            "title": "Digest Auth Password",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "ntlm_auth_username",
+            "title": "NTLM Auth Username",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "ntlm_auth_password",
+            "title": "NTLM Auth Password",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "ntlm_auth_domain",
+            "title": "NTLM Auth Domain",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "hide_all",
+            "title": "Hide All",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "http_proxy_address",
+            "title": "Proxy Address",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "http_proxy_login",
+            "title": "Proxy Login",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "http_proxy_password",
+            "title": "Proxy Password",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "quick_preview_schema",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error",
+            "title": "",
+            "type": "bool",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_numbers",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "2",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_delay",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "3",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_regexp",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response",
+            "title": "",
+            "type": "bool",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_regexp",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_numbers",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "2",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_delay",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "3",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": null,
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null,
+        "tags": []
+      }
+    },
+    {
+      "id": "69d9ef2647473ec6731ee625",
+      "title": "JS_LEGIA",
+      "description": "",
+      "localId": "3",
+      "typeId": "62cc22317ae28c026d256930",
+      "params": [
+        {
+          "key": "response_time",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "code",
+          "type": "text",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "/** @CustomParams\n{\n    \"response_time\": {\n        \"type\": \"int\",\n        \"title\": \"Response Time (ms)\",\n        \"required\": false,\n        \"description\": \"Optional: Provide the response time from workflow logs or another node\"\n    }\n}\n*/\n\nexport default async function run({ execution_id, input, data }) {\n    // 1. Fetch data from previous HTTP node (ID = 2)\n    const html = data[\"{{2.`body`}}\"] || \"\";\n    const status = parseInt(data[\"{{2.`status`}}\"], 10);\n\n    // 2. Get response time from custom param or default to 0\n    const responseTime = data.response_time || 0;\n\n    // 3. Initialize report object\n    let report = {\n        is_healthy: true,\n        alerts: [],\n        metrics: {\n            status: status,\n            responseTime: responseTime + \"ms\",\n            contentLength: html.length\n        },\n        seo: {},\n        check_time: new Date().toLocaleString(\"pl-PL\")\n    };\n\n    // --- CASE 1: Status Code Check ---\n    if (status !== 200) {\n        report.is_healthy = false;\n        report.alerts.push(`KRYTYCZNY: Serwer zwrócił status ${status}`);\n    }\n\n    // --- CASE 2: Performance Check ---\n    if (responseTime > 3000) {\n        report.is_healthy = false;\n        report.alerts.push(`OSTRZEŻENIE: Strona muli. Czas odpowiedzi: ${responseTime}ms`);\n    }\n\n    // --- CASE 3: Content Integrity ---\n    const requiredKeywords = [\"Legia\", \"Warszawa\", \"Sklep\"];\n    const missingKeywords = requiredKeywords.filter(word => !html.toLowerCase().includes(word.toLowerCase()));\n\n    if (missingKeywords.length > 0) {\n        report.is_healthy = false;\n        report.alerts.push(`BŁĄD TREŚCI: Brak słów kluczowych: ${missingKeywords.join(\", \")}`);\n    }\n\n    // --- CASE 4: Error Detection ---\n    const errorPhrases = [\"sql error\", \"database connection failed\", \"php fatal error\"];\n    const foundErrors = errorPhrases.filter(phrase => html.toLowerCase().includes(phrase));\n\n    if (foundErrors.length > 0) {\n        report.is_healthy = false;\n        report.alerts.push(`WYKRYTO BŁĄD W KODZIE: ${foundErrors.join(\", \")}`);\n    }\n\n    // --- CASE 5: SEO / Metadata ---\n    const titleMatch = html.match(/<title>(.*?)<\\/title>/);\n    report.seo.title = titleMatch ? titleMatch[1] : \"Brak tytułu!\";\n\n    // --- CASE 6: Email subject & body ---\n    report.email_subject = report.is_healthy\n        ? `✅ Legia.com OK (${status})`\n        : `🚨 AWARIA Legia.com (${status})`;\n\n    report.email_body = `\nWYNIK MONITORINGU: ${report.is_healthy ? \"✅ WSZYSTKO DZIAŁA\" : \"🚨 WYKRYTO PROBLEM\"}\n-------------------------------------------\nStrona: https://legia.com\nStatus HTTP: ${report.metrics.status}\nCzas odpowiedzi: ${report.metrics.responseTime}\nData sprawdzenia: ${report.check_time}\n\n${report.is_healthy \n    ? \"Wszystkie parametry (kod statusu i słowa kluczowe) są w normie.\" \n    : \"UWAGA: Strona zwróciła błąd lub nie zawiera kluczowych słów. Sprawdź to ręcznie!\"}\n\n-------------------------------------------\nWiadomość wygenerowana automatycznie przez Latenode.\n    `.trim();\n\n    return report;\n}",
+            "text": "/** @CustomParams\n{\n    \"response_time\": {\n        \"type\": \"int\",\n        \"title\": \"Response Time (ms)\",\n        \"required\": false,\n        \"description\": \"Optional: Provide the response time from workflow logs or another node\"\n    }\n}\n*/\n\nexport default async function run({ execution_id, input, data }) {\n    // 1. Fetch data from previous HTTP node (ID = 2)\n    const html = data[\"{{2.`body`}}\"] || \"\";\n    const status = parseInt(data[\"{{2.`status`}}\"], 10);\n\n    // 2. Get response time from custom param or default to 0\n    const responseTime = data.response_time || 0;\n\n    // 3. Initialize report object\n    let report = {\n        is_healthy: true,\n        alerts: [],\n        metrics: {\n            status: status,\n            responseTime: responseTime + \"ms\",\n            contentLength: html.length\n        },\n        seo: {},\n        check_time: new Date().toLocaleString(\"pl-PL\")\n    };\n\n    // --- CASE 1: Status Code Check ---\n    if (status !== 200) {\n        report.is_healthy = false;\n        report.alerts.push(`KRYTYCZNY: Serwer zwrócił status ${status}`);\n    }\n\n    // --- CASE 2: Performance Check ---\n    if (responseTime > 3000) {\n        report.is_healthy = false;\n        report.alerts.push(`OSTRZEŻENIE: Strona muli. Czas odpowiedzi: ${responseTime}ms`);\n    }\n\n    // --- CASE 3: Content Integrity ---\n    const requiredKeywords = [\"Legia\", \"Warszawa\", \"Sklep\"];\n    const missingKeywords = requiredKeywords.filter(word => !html.toLowerCase().includes(word.toLowerCase()));\n\n    if (missingKeywords.length > 0) {\n        report.is_healthy = false;\n        report.alerts.push(`BŁĄD TREŚCI: Brak słów kluczowych: ${missingKeywords.join(\", \")}`);\n    }\n\n    // --- CASE 4: Error Detection ---\n    const errorPhrases = [\"sql error\", \"database connection failed\", \"php fatal error\"];\n    const foundErrors = errorPhrases.filter(phrase => html.toLowerCase().includes(phrase));\n\n    if (foundErrors.length > 0) {\n        report.is_healthy = false;\n        report.alerts.push(`WYKRYTO BŁĄD W KODZIE: ${foundErrors.join(\", \")}`);\n    }\n\n    // --- CASE 5: SEO / Metadata ---\n    const titleMatch = html.match(/<title>(.*?)<\\/title>/);\n    report.seo.title = titleMatch ? titleMatch[1] : \"Brak tytułu!\";\n\n    // --- CASE 6: Email subject & body ---\n    report.email_subject = report.is_healthy\n        ? `✅ Legia.com OK (${status})`\n        : `🚨 AWARIA Legia.com (${status})`;\n\n    report.email_body = `\nWYNIK MONITORINGU: ${report.is_healthy ? \"✅ WSZYSTKO DZIAŁA\" : \"🚨 WYKRYTO PROBLEM\"}\n-------------------------------------------\nStrona: https://legia.com\nStatus HTTP: ${report.metrics.status}\nCzas odpowiedzi: ${report.metrics.responseTime}\nData sprawdzenia: ${report.check_time}\n\n${report.is_healthy \n    ? \"Wszystkie parametry (kod statusu i słowa kluczowe) są w normie.\" \n    : \"UWAGA: Strona zwróciła błąd lub nie zawiera kluczowych słów. Sprawdź to ręcznie!\"}\n\n-------------------------------------------\nWiadomość wygenerowana automatycznie przez Latenode.\n    `.trim();\n\n    return report;\n}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "use_bun",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_numbers",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "2",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_delay",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "3",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_regexp",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_regexp",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_numbers",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "2",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_delay",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "3",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 453,
+        "y": 0
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "response_time",
+            "title": "Response Time (ms)",
+            "type": "int",
+            "required": false,
+            "description": "Optional: Provide the response time from workflow logs or another node",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "code",
+            "title": "",
+            "type": "text",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": {
+                "lang": "",
+                "prefix": "",
+                "suffix": "",
+                "fetchOn": []
+              },
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "use_bun",
+            "title": "",
+            "type": "bool",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "quick_preview_schema",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error",
+            "title": "",
+            "type": "bool",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_numbers",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "2",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_delay",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "3",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_regexp",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response",
+            "title": "",
+            "type": "bool",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_regexp",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_numbers",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "2",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_delay",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "3",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": null,
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null,
+        "tags": []
+      }
+    },
+    {
+      "id": "69d9f8f71efbf26da8ec5f59",
+      "title": "",
+      "description": "",
+      "localId": "6",
+      "typeId": "68efa1e7866452688532dda5",
+      "params": [
+        {
+          "key": "access_token",
+          "type": "connection",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "{{#69d9e84747473ec6731ee619}}",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "to",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [
+              "adrian.czyrek5@gmail.com"
+            ],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "subject",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$3.email_subject}}",
+            "text": "{{$3.email_subject}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "body",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "{{$3.email_body}}",
+            "text": "{{$3.email_body}}",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "bodyType",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [
+              "plaintext"
+            ],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "cc",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "bcc",
+          "type": "string_array",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "fromName",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "inReplyTo",
+          "type": "select",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "attachments",
+          "type": "string_to_string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_numbers",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "2",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_delay",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "3",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_error_regexp",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response",
+          "type": "bool",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_regexp",
+          "type": "string",
+          "value": {
+            "stringToString": [],
+            "int": "0",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_numbers",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "2",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        },
+        {
+          "key": "__$$internal__retry_on_wrong_response_delay",
+          "type": "int",
+          "value": {
+            "stringToString": [],
+            "int": "3",
+            "string": "",
+            "text": "",
+            "select": [],
+            "constructorParams": [],
+            "custom": "",
+            "stringArray": [],
+            "bool": false,
+            "multiselect": [],
+            "connection": "",
+            "stringToAny": []
+          }
+        }
+      ],
+      "coords": {
+        "x": 675,
+        "y": 0
+      },
+      "calculatedNodeType": {
+        "id": "",
+        "name": "",
+        "alias": "",
+        "description": "",
+        "descriptionAttention": "",
+        "params": [
+          {
+            "key": "access_token",
+            "title": "Connection",
+            "type": "connection",
+            "required": true,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": {
+                "availableConnections": [
+                  "gmail"
+                ],
+                "fetchOn": []
+              },
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "to",
+            "title": "To",
+            "type": "string_array",
+            "required": true,
+            "description": "Enter a single recipient's email or multiple emails as items in an array",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "subject",
+            "title": "Subject",
+            "type": "string",
+            "required": true,
+            "description": "Specify a subject for the email",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "body",
+            "title": "Email Body",
+            "type": "string",
+            "required": true,
+            "description": "Include an email body as either plain text or HTML. If HTML, make sure to set the \"Body Type\" prop to html",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "bodyType",
+            "title": "Body Type",
+            "type": "select",
+            "required": false,
+            "description": "Choose to send as plain text or HTML",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [
+                  {
+                    "key": "plaintext",
+                    "value": "Plaintext"
+                  }
+                ],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": false
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [
+                "plaintext"
+              ],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "cc",
+            "title": "Cc",
+            "type": "string_array",
+            "required": false,
+            "description": "Enter a single recipient's email or multiple emails as items in an array",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "bcc",
+            "title": "Bcc",
+            "type": "string_array",
+            "required": false,
+            "description": "Enter a single recipient's email or multiple emails as items in an array",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "fromName",
+            "title": "From Name",
+            "type": "string",
+            "required": false,
+            "description": "Specify the name that will be displayed in the \"From\" section of the email",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "inReplyTo",
+            "title": "Message ID To Reply",
+            "type": "select",
+            "required": false,
+            "description": "Specify the `message ID` this email is replying to",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": {
+                "options": [],
+                "multiple": false,
+                "fetchOn": [],
+                "withLabel": false,
+                "type": "",
+                "pagination": {
+                  "page": 0,
+                  "context": "",
+                  "supported": true
+                },
+                "query": {
+                  "value": "",
+                  "supported": false
+                }
+              },
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "attachments",
+            "title": "Attachments",
+            "type": "string_to_string",
+            "required": false,
+            "description": "Add any attachments you'd like to include as objects. The `key` should be the **filename** and the value should be the **url** for the attachment. The **filename** must contain the file extension (i.e. `.jpeg`, `.txt`) and the **url** is the download link for the file.",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "quick_preview_schema",
+            "title": "Quick preview schema",
+            "type": "string",
+            "required": false,
+            "description": "This field lets you format response data for easy reading. Define key-path pairs in JSON, where the key is the header and the value is the data path.\n\nExample: `{ \"Name\": \"result.user.name\", \"Email\": \"result.contact.email\" }`",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error",
+            "title": "",
+            "type": "bool",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_numbers",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "2",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_delay",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "3",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_error_regexp",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response",
+            "title": "",
+            "type": "bool",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_regexp",
+            "title": "",
+            "type": "string",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "0",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_numbers",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "2",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          },
+          {
+            "key": "__$$internal__retry_on_wrong_response_delay",
+            "title": "",
+            "type": "int",
+            "required": false,
+            "description": "",
+            "options": {
+              "string": null,
+              "int": null,
+              "text": null,
+              "stringToString": null,
+              "select": null,
+              "stringArray": null,
+              "bool": null,
+              "connection": null,
+              "stringToAny": null
+            },
+            "default": {
+              "stringToString": [],
+              "int": "3",
+              "string": "",
+              "text": "",
+              "select": [],
+              "constructorParams": [],
+              "custom": "",
+              "stringArray": [],
+              "bool": false,
+              "multiselect": [],
+              "connection": "",
+              "stringToAny": []
+            },
+            "optional": false
+          }
+        ],
+        "systemInfo": {
+          "environment": "",
+          "isPd": true,
+          "isJsn": true,
+          "pdAvailableGetLastRecords": false
+        },
+        "icon": null,
+        "purposes": [],
+        "isPublic": false,
+        "billing": null,
+        "tags": []
+      }
+    }
+  ],
+  "gateways": [
+    {
+      "nodeId": "69d9ee8f9b03c8500fbd5fd3",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "69d9eec60a095fc3b3d72bc7",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "69d9eec60a095fc3b3d72bc7",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "69d9ef2647473ec6731ee625",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    },
+    {
+      "nodeId": "69d9ef2647473ec6731ee625",
+      "localNodeId": "",
+      "routes": [
+        {
+          "condition": {
+            "type": "",
+            "expression": {
+              "value": ""
+            }
+          },
+          "label": "",
+          "nodeId": "69d9f8f71efbf26da8ec5f59",
+          "localNodeId": "",
+          "isFallback": false,
+          "purpose": "input"
+        }
+      ],
+      "name": "",
+      "purpose": "output"
+    }
+  ],
+  "spaceId": "95858",
+  "ownerId": "95975",
+  "version": "19",
+  "tags": [],
+  "release": false,
+  "latestLocalNodeId": "6",
+  "environments": [
+    {
+      "id": "69d9edde9b03c8500fbd5fce",
+      "alias": "prod",
+      "name": "Prod",
+      "actualVersion": "17",
+      "isActive": true
+    },
+    {
+      "id": "69d9edde9b03c8500fbd5fcf",
+      "alias": "dev",
+      "name": "Dev",
+      "actualVersion": "19",
+      "isActive": true
+    }
+  ],
+  "nodulInfo": {
+    "isNodul": false,
+    "isPublic": false,
+    "isCodul": false,
+    "isTenantPublic": false
+  },
+  "readOnly": false,
+  "executionBucket": "execution_bucket_default",
+  "isUsersPublic": false
+}
